@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="pt-br">
 <head>
           <meta charset="UTF-8">
@@ -6,45 +6,108 @@
           content="width=device-width, initial-scale=1.0">
           <title>Blog</title>
           <style>
-               header{
+               body {
+                 background-color: #101818;
+                 font-family: Arial, sans-serif;
+                 margin: 0;
+               }
+
+               header {
                  background-color: #107575;
-                 color:#8fbfff;
-                  text-align: center ;
-                  max-width: 800px;
-                  margin: 0 auto;
-                  padding: 16 px;
-                 
+                 color: #8fbfff;
+                 text-align: center;
+                 max-width: 800px;
+                 margin: 20px auto 0;
+                 padding: 16px;
+                 border-radius: 15px 15px 0 0;
+                 box-shadow: 0 0 15px #107575;
                }
                main {
-                  background-color:#8fbfff;
-                  color: #c8caca;
+                  background-color: #8fbfff;
+                  color: #222;
                   max-width: 800px;
                   margin: 0 auto;
                   padding: 16px;
+                  border-radius: 0 0 15px 15px;
+                  box-shadow: 0 0 15px #8fbfff;
                }
 
+               h1 {
+                 font-size: 40px;
+                 text-shadow: 2px 2px 5px #000;
+               }
 
+               h2 {
+                 color: #107575;
+                 border-left: 5px solid #107575;
+                 padding-left: 10px;
+               }
+
+               p {
+                 font-size: 18px;
+                 line-height: 1.6;
+               }
+
+               img {
+                 max-width: 100%;
+                 border-radius: 12px;
+                 display: block;
+                 margin: 15px auto;
+                 box-shadow: 0 5px 15px #333;
+               }
+
+               hr {
+                 border: none;
+                 border-top: 2px solid #107575;
+                 margin: 25px 0;
+               }
+
+               button {
+                 background-color: #107575;
+                 color: white;
+                 border: none;
+                 padding: 12px 25px;
+                 border-radius: 25px;
+                 font-size: 20px;
+                 cursor: pointer;
+                 transition: 0.3s;
+               }
+
+               button:hover {
+                 background-color: #075050;
+                 transform: scale(1.1);
+               }
           </style>
           
      </head>
      <body>
           
-               <h1>Grau de rua</h1>
-               <p>Vou compartilhar conhecimentos sobre o grau de rua</p>
+               <header>
+                    <h1>Grau de rua</h1>
+                    <p>Vou compartilhar conhecimentos sobre o grau de rua</p>
+               </header>
 
-               <hr>
+               <main>
 
-               <h2>Postagem 1: Com raspar o estribo?</h2>
-               <p>Aprender a raspar o estribo e o primeiro passo para se tornar um D</p>
-               <img src= "bryan.jpg"                alt="Pessoa programando no computador">
+                    <h2>Postagem 1: Com raspar o estribo?</h2>
+                    <p>Aprender a raspar o estribo e o primeiro passo para se tornar um D</p>
+                    <img src="bryan.jpg" alt="Pessoa programando no computador">
 
-               <hr>
+                    <hr>
                
-          
-          
-               <h2>Meu primeiro post</h2> 
-               <p>Por: Jefferson Oliveira</p>
-               <p>Boas-vindas ao meu blog! Aqui vou compartilhar o grau de rua</p>
+                    <h2>Meu primeiro post</h2> 
+                    <p>Por: Jefferson Oliveira</p>
+                    <p>Boas-vindas ao meu blog! Aqui vou compartilhar o grau de rua</p>
+
+                    <button onclick="curtir()">🤑 Curtir</button>
+
+               </main>
+
+               <script>
+                    function curtir() {
+                         alert("Voce curtiu a postagem! 🤑");
+                    }
+               </script>
           
      </body>
 </html>
